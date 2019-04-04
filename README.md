@@ -9,13 +9,25 @@ All required dependency can be pulled using git submodules.
 $ git submodule update --init --recursive
 ```
 
-## How to build
+## How to build for Android
+
+### Build TBB
 
 ```
 $ ./scripts/bootstrap-tbb-cmake.sh`
 ```
 
-Please see `scripts` folder for a while.
+### Build OpenSubdiv
+
+```
+$ ./scripts/bootstrap-osd-cmake.sh`
+```
+
+### Build USD
+
+```
+$ ./scripts/bootstrap-usd-cmake.sh`
+```
 
 ### x64 Linux native build
 
