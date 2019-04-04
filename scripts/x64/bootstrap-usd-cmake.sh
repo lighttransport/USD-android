@@ -1,0 +1,18 @@
+#!/bin/bash
+
+INSTALL_DIR=`pwd`/dist-x64
+BUILD_DIR=build-usd-x64
+
+rm -rf ${BUILD_DIR}
+
+cmake \
+  -DBoost_INCLUDE_DIR=`pwd`/boost \
+  -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+  -DCMAKE_INSTALL_PREFIX=${INSTALL_DIR} \
+  -DPXR_BUILD_TESTS=Off \
+  -DPXR_BUILD_IMAGING=Off \
+  -DPXR_BUILD_USDVIEW=Off \
+  -DPXR_ENABLE_PYTHON_SUPPORT=Off \
+  -DPXR_ENABLE_GL_SUPPORT=Off \
+  -DPXR_ENABLE_PTEX_SUPPORT=Off \
+  -B${BUILD_DIR} -HUSD-aarch64

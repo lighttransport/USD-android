@@ -11,9 +11,20 @@ $ git submodule update --init --recursive
 
 ## How to build
 
-T.B.W.
+```
+$ ./scripts/bootstrap-tbb-cmake.sh`
+```
 
 Please see `scripts` folder for a while.
+
+### x64 Linux native build
+
+x64 Linux native build is provided for developers.
+(e.g. for example app development whose codebase is shared with Android and Linux)
+
+```
+$ ./scripts/x64/bootstrap-tbb-cmake.sh
+```
 
 ## Note on Boost
 

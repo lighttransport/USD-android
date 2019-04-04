@@ -1,0 +1,23 @@
+#!/bin/bash
+
+BUILD_DIR=build-osd-x64
+INSTALL_DIR=`pwd`/dist-x64
+
+rm -rf ${BUILD_DIR}
+
+cmake \
+-DCMAKE_INSTALL_PREFIX=${INSTALL_DIR} \
+-DNO_TUTORIALS=On \
+-DNO_EXAMPLES=On \
+-DNO_REGRESSION=On \
+-DNO_DOC=On \
+-DNO_OMP=On \
+-DNO_TBB=On \
+-DNO_CUDA=On \
+-DNO_OPENCL=On \
+-DNO_OPENGL=On \
+-DNO_TESTS=On \
+-DNO_GLTESTS=On \
+-DNO_GLFW=On \
+-DNO_PTEX=On \
+-B${BUILD_DIR} -HOpenSubdiv-aarch64
