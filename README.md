@@ -1,5 +1,8 @@
 # USD(Universal Scene Description) build script for Android
 
+**This project is obsolete. Please use https://github.com/syoyo/USD-aarch64 **
+
+
 Build scripts for building USD on Android.
 All required dependency can be pulled using git submodules.
 
